@@ -19,29 +19,7 @@ Este portfólio está disponível online e pode ser acessado pelo seguinte link:
 🔗 [Meu Portfólio](https://matheusbrezende.github.io/Portifolio/)
 
 ## 📸 Capturas de Tela
-### Página Inicial
-![Página Inicial](link-para-screenshot-inicial.png)
 
-### Seção de Projetos
-![Seção de Projetos](link-para-screenshot-projetos.png)
-
-## 📂 Estrutura do Projeto
-```plaintext
-Portifolio/
-├── index.html      # Página principal
-├── css/
-│   └── styles.css  # Estilos da página
-├── js/
-│   └── script.js   # Funcionalidades interativas
-└── assets/
-    └── images/     # Imagens utilizadas no site
-
-🌟 Próximos Passos
-
-Adicionar animações com bibliotecas como GSAP ou AOS.
-Incluir uma seção de blog para compartilhar conteúdos técnicos.
-
-    Melhorar a acessibilidade (a11y) do site.
 
 🧑‍💻 Autor
 
