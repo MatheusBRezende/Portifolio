@@ -25,7 +25,7 @@ const projectsData = [
         title: "Breaking Cat",
         description:
           "Esse site está em desenvolvimento com o intuito de ajudar alunos de química de todas idades utilizando IA para proporcionar um melhor aprendizado",
-        image: "./image.png",
+        image: "./photos/image.png",
         github: "https://github.com/MatheusBRezende/confirmacao-presenca",
       },
 
