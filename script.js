@@ -29,9 +29,9 @@ window.addEventListener("scroll", () => {
 // Projects carousel
 const projectsData = [
   {
-    title: "Breaking Cat",
+    title: "Confirmação de presença",
     description:
-      "Esse site está em desenvolvimento com o intuito de ajudar alunos de química de todas idades utilizando IA para proporcionar um melhor aprendizado",
+      "Esse site foi desenvolvido com o intuito de realizar a confirmação de presença dos usuários.",
     image: "./photos/image.png",
     github: "https://github.com/MatheusBRezende/confirmacao-presenca",
   },
