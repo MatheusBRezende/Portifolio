@@ -73,7 +73,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   })
 })
 
-// Project filtering
+// Project filtering - CORRIGIDO
 const filterButtons = document.querySelectorAll(".filter-btn")
 const projectCards = document.querySelectorAll(".project-card")
 
@@ -90,7 +90,12 @@ filterButtons.forEach((button) => {
     // Show/hide projects based on filter
     projectCards.forEach((card) => {
       if (filter === "all" || card.getAttribute("data-category") === filter) {
-        card.style.display = "block"
+        card.style.display = ""
+
+        // Restaura o layout grid para o card featured quando visível
+        if (card.classList.contains("featured")) {
+          card.style.display = "grid"
+        }
       } else {
         card.style.display = "none"
       }
@@ -143,7 +148,6 @@ const animateOnScroll = () => {
     if (elementPosition < screenPosition) {
       element.classList.add("animate")
 
-     
       if (element.classList.contains("skill-category")) {
         const skillLevels = element.querySelectorAll(".skill-level")
         skillLevels.forEach((level) => {
@@ -155,22 +159,18 @@ const animateOnScroll = () => {
   })
 }
 
-
 document.addEventListener("DOMContentLoaded", () => {
   const yearElement = document.getElementById("current-year")
   if (yearElement) {
     yearElement.textContent = new Date().getFullYear()
   }
 
- 
   animateOnScroll()
 
- 
   const skillLevels = document.querySelectorAll(".skill-level")
   skillLevels.forEach((level) => {
     level.style.width = "0%"
   })
-
 
   setTimeout(() => {
     animateSkillBars()

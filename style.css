@@ -739,6 +739,8 @@ html.dark .moon-icon {
 
 .project-content {
   padding: 25px;
+  z-index: 2;
+  position: relative;
 }
 
 .project-card.featured .project-content {
@@ -781,6 +783,9 @@ html.dark .moon-icon {
 .project-links {
   display: flex;
   gap: 10px;
+  margin-top: 15px;
+  z-index: 5;
+  position: relative;
 }
 
 /* CTA Section */
@@ -1124,4 +1129,33 @@ html.dark .moon-icon {
   .cta-content h2 {
     font-size: 1.8rem;
   }
+}
+
+/* Adicionando apenas a correção para o projeto featured */
+@media (max-width: 768px) {
+  .project-card.featured {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Garantindo que os links do projeto sejam sempre visíveis */
+.project-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  z-index: 5;
+  position: relative;
+}
+
+/* Ajuste para o card featured quando filtrado */
+.project-card.featured {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Garantindo que o conteúdo do projeto seja visível */
+.project-content {
+  padding: 25px;
+  z-index: 2;
+  position: relative;
 }
