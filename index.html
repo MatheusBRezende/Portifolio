@@ -353,7 +353,7 @@ public class ExperienciaIncrivel {
                     </div>
                 </div>
                 
-                <form class="contact-form" id="contactForm" onsubmit="sendEmail(event)">
+                <form class="contact-form" id="contactForm" onsubmit="sendEmail(event)" data-formsubmit="true">
                     <div class="form-group">
                         <label for="name">Nome</label>
                         <input type="text" id="name" name="name" placeholder="Seu nome" required>
@@ -371,33 +371,7 @@ public class ExperienciaIncrivel {
                     </button>
 
                     <script>
-                        document.getElementById('contactForm').addEventListener('submit', async function (event) {
-                            event.preventDefault();
-                          
-                            const name = document.getElementById('name').value;
-                            const email = document.getElementById('email').value;
-                            const message = document.getElementById('message').value;
-                          
-                            try {
-                                const response = await fetch('https://formsubmit.co/ajax/mbazarello@gmail.com', {
-                                    method: 'POST',
-                                    headers: {
-                                        'Content-Type': 'application/json',
-                                        Accept: 'application/json',
-                                    },
-                                    body: JSON.stringify({ name, email, message }),
-                                });
-                          
-                                if (response.ok) {
-                                    alert('Mensagem enviada com sucesso!');
-                                    document.getElementById('contactForm').reset();
-                                } else {
-                                    alert('Ocorreu um erro ao enviar a mensagem. Tente novamente.');
-                                }
-                            } catch (error) {
-                                alert('Erro ao enviar a mensagem. Verifique sua conexão com a internet.');
-                            }
-                          });
+
                     </script>
                 </form>
             </div>
