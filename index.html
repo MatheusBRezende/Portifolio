@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Matheus Bazarello Rezende - Desenvolvedor Web e criador de mods para Minecraft">
+    <title>Matheus Bazarello | Desenvolvedor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar" aria-label="Navegação principal">
+                <a href="#" class="logo">Matheus<span>BRezende</span></a>
+                <ul class="nav-links" role="menubar">
+                    <li role="none"><a role="menuitem" href="#sobre">Sobre</a></li>
+                    <li role="none"><a role="menuitem" href="#habilidades">Habilidades</a></li>
+                    <li role="none"><a role="menuitem" href="#projetos">Projetos</a></li>
+                    <li role="none"><a role="menuitem" href="#contato">Contato</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Alternar modo escuro">
+                        <i class="bi bi-sun-fill sun-icon"></i>
+                        <i class="bi bi-moon-fill moon-icon"></i>
+                    </button>
+                    <button class="menu-toggle" aria-label="Menu mobile">
+                        <i class="bi bi-list"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="badge">Disponível para projetos</div>
+                <h1>Desenvolvedor Web & Criador de Mods</h1>
+                <p class="subtitle">Transformando ideias em soluções digitais inovadoras</p>
+                <div class="hero-buttons">
+                    <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+                    <a href="#contato" class="btn btn-secondary">Contato</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Projetos</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="code-snippet">
+                    <div class="code-header">
+                        <span class="code-dot"></span>
+                        <span class="code-dot"></span>
+                        <span class="code-dot"></span>
+                        <span class="code-title">ExperienciaIncrivel.js</span>
+                    </div>
+                    <pre><code class="language-java">// Meu código de exemplo
+public class ExperienciaIncrivel {
+    public static void main(String[] args) {
+        String tecnologia = "React";
+        String paixao = "Minecraft Modding";
+        System.out.println(tecnologia + " + " + paixao + " = Experiência Excepcional!");
+    }
+}
+                </div>
+            </div>
+        </div>
+        <div class="hero-shape"></div>
+    </section>
+
+    <section id="sobre" class="section">
+        <div class="container">
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <img src="./photos/WhatsApp Image 2025-01-24 at 13.10.51.jpeg" alt="Matheus Bazarello Rezende" loading="lazy">
+                        <div class="image-decoration"></div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <div class="section-badge">Quem sou eu</div>
+                    <h3>Desenvolvedor Web & Estudante de Sistemas de Informação</h3>
+                    <p>Olá! Sou Matheus Bazarello Rezende, um desenvolvedor apaixonado por tecnologia e criação de soluções digitais. Atualmente curso Sistemas de Informação na Newton Paiva, onde estou construindo uma base sólida em desenvolvimento de software.</p>
+                    
+                    <div class="education-card">
+                        <i class="bi bi-mortarboard"></i>
+                        <div>
+                            <h4>Sistemas de Informação</h4>
+                            <p>Newton Paiva · 2024 - Presente</p>
+                        </div>
+                    </div>
+                    
+                    <div class="interests">
+                        <h4>Meus Interesses:</h4>
+                        <ul>
+                            <li><i class="bi bi-check-circle"></i> Desenvolvimento Web Moderno</li>
+                            <li><i class="bi bi-check-circle"></i> Criação de Mods para Minecraft</li>
+                            <li><i class="bi bi-check-circle"></i> Soluções Inovadoras com IA</li>
+                            <li><i class="bi bi-check-circle"></i> Aprendizado Contínuo</li>
+                        </ul>
+                    </div>
+                    
+                    <a href="#contato" class="btn btn-primary mt-4">Entre em Contato</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title">Minhas Habilidades</h2>
+            <div class="section-subtitle">Tecnologias e ferramentas que domino</div>
+            
+            <div class="skills-container">
+                <div class="skills-categories">
+                    <div class="skill-category" data-aos="fade-up">
+                        <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+                        <h3>Front-end</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <i class="fa-brands fa-html5"></i>
+                                <div class="skill-info">
+                                    <span>HTML5 90%</span>
+                                    <div class="skill-level-container">
+                                        <div class="skill-level" style="--level: 90%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fa-brands fa-css3-alt"></i>
+                                <div class="skill-info">
+                                    <span>CSS3 85%</span>
+                                    <div class="skill-level-container">
+                                        <div class="skill-level" style="--level: 85%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fa-brands fa-js"></i>
+                                <div class="skill-info">
+                                    <span>JavaScript 80%</span>
+                                    <div class="skill-level-container">
+                                        <div class="skill-level" style="--level: 80%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fa-brands fa-react"></i>
+                                <div class="skill-info">
+                                    <span>React 70%</span>
+                                    <div class="skill-level-container">
+                                        <div class="skill-level" style="--level: 70%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                        <div class="skill-icon"><i class="fa-solid fa-server"></i></div>
+                        <h3>Back-end</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <i class="fa-brands fa-node-js"></i>
+                                <div class="skill-info">
+                                    <span>Node.js 75%</span>
+                                    <div class="skill-level-container">
+                                        <div class="skill-level" style="--level: 75%"></div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fa-brands fa-python"></i>
+                                <div class="skill-info">
+                                    <span>Python 65%</span>
+                                    <div class="skill-level-container">
+                                        <div class="skill-level" style="--level: 65%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                        <div class="skill-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                        <h3>Ferramentas</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <i class="fa-brands fa-git-alt"></i>
+                                <div class="skill-info">
+                                    <span>Git 80%</span>
+                                    <div class="skill-level-container">
+                                        <div class="skill-level" style="--level: 80%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fa-solid fa-cube"></i>
+                                <div class="skill-info">
+                                    <span>Minecraft Modding 85%</span>
+                                    <div class="skill-level-container">
+                                        <div class="skill-level" style="--level: 85%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="section">
+        <div class="container">
+            <h2 class="section-title">Meus Projetos</h2>
+            <div class="section-subtitle">Trabalhos recentes que desenvolvi</div>
+            
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="minecraft">Minecraft</button>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card featured" data-category="web">
+                    <div class="project-image">
+                        <img src="./photos/image.png" alt="Sistema de Confirmação de Presença" loading="lazy">
+                        <div class="project-tag">Concluído</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Sistema de Confirmação de Presença</h3>
+                        <p>Sistema web para gerenciar confirmações de presença em eventos, já utilizado com sucesso em diversos eventos. Oferece interface intuitiva e relatórios detalhados.</p>
+                        <div class="project-techs">
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                            <span>Firebase</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/MatheusBRezende/confirmacao-presenca" class="btn btn-small" target="_blank" rel="noopener">
+                                <i class="bi bi-github"></i> GitHub
+                            </a>
+                            <a href="#" class="btn btn-small btn-primary" target="_blank" rel="noopener">
+                                <i class="bi bi-eye"></i> Visualizar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="minecraft">
+                    <div class="project-image">
+                        <img src="./photos/pic1.jpg" alt="Mod de Minecraft" loading="lazy">
+                        <div class="project-tag">Em Desenvolvimento</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Mod para Minecraft</h3>
+                        <p>Desenvolvimento de um mod personalizado para Minecraft adicionando novas mecânicas, itens e funcionalidades ao jogo. Focado em melhorar a experiência de jogabilidade.</p>
+                        <div class="project-techs">
+                            <span>Java</span>
+                            <span>Minecraft Forge</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small" target="_blank" rel="noopener">
+                                <i class="bi bi-github"></i> Repositório
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="./photos/FireShot Capture 002 - Breaking Cat - 127.0.0.1.png" alt="Breaking Cat" loading="lazy">
+                        <div class="project-tag">Em Pausa</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Breaking Cat</h3>
+                        <p>Plataforma educacional para auxiliar no aprendizado de química utilizando IA. Oferece explicações interativas e exercícios personalizados para estudantes.</p>
+                        <div class="project-techs">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>IA</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/MatheusBRezende/breaking_cat" class="btn btn-small" target="_blank" rel="noopener">
+                                <i class="bi bi-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="section cta-section bg-alt">
+        <div class="container">
+            <div class="cta-container">
+                <div class="cta-content">
+                    <h2>Vamos trabalhar juntos?</h2>
+                    <p>Estou disponível para novos projetos e oportunidades. Entre em contato para discutirmos como posso ajudar a transformar suas ideias em realidade.</p>
+                    <a href="#contato" class="btn btn-primary">Entre em Contato</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section">
+        <div class="container">
+            <h2 class="section-title">Vamos Conversar!</h2>
+            <div class="section-subtitle">Estou a um clique de distância</div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <p>Estou aberto a oportunidades, colaborações ou apenas uma conversa sobre tecnologia e desenvolvimento.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="bi bi-envelope"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:mbazarello@gmail.com">mbazarello@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="bi bi-linkedin"></i>
+                            </div>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <a href="https://www.linkedin.com/in/matheus-bazarello-ba058b277/" target="_blank">Matheus Bazarello</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="bi bi-github"></i>
+                            </div>
+                            <div>
+                                <h4>GitHub</h4>
+                                <a href="https://github.com/MatheusBRezende" target="_blank">MatheusBRezende</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Seu email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" placeholder="Sua mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <i class="bi bi-send"></i> Enviar Mensagem
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">Matheus<span>BRezende</span></a>
+                    <p>Desenvolvedor Web & Criador de Mods</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#habilidades">Habilidades</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-icons">
+                        <a href="https://github.com/MatheusBRezende" target="_blank" aria-label="GitHub">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/matheus-bazarello-ba058b277/" target="_blank" aria-label="LinkedIn">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="mailto:mbazarello@gmail.com" aria-label="Email">
+                            <i class="bi bi-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2024</span> Matheus Bazarello Rezende. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
