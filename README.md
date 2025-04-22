@@ -16,11 +16,11 @@ Este é o meu portfólio pessoal, criado para exibir meus projetos, habilidades 
 
 ## 🚀 Como Visualizar
 Este portfólio está disponível online e pode ser acessado pelo seguinte link:  
-🔗 [Meu Portfólio](https://matheusbrezende.github.io/Portifolio/)
+🔗 [Meu Portfólio]()
 
 ## 📸 Capturas de Tela
 
-![Portfólio](./photos/FireShot%20Capture%20011%20-%20Portfolio%20-%20127.0.0.1.png)
+![Portfólio](./photos/)
 🧑‍💻 Autor
 
 Desenvolvido por Matheus Bazarello Rezende.
