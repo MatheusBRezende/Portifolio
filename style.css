@@ -1149,3 +1149,56 @@ html.dark .moon-icon {
   z-index: 2;
   position: relative;
 }
+/* Adicione ao seu style.css */
+.success-message {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.success-message.show {
+  opacity: 1;
+}
+
+.success-content {
+  background-color: var(--background);
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 10px 30px var(--shadow);
+  transform: translateY(20px);
+  transition: transform 0.3s ease;
+}
+
+.success-message.show .success-content {
+  transform: translateY(0);
+}
+
+.success-content i {
+  font-size: 4rem;
+  color: var(--success);
+  margin-bottom: 20px;
+}
+
+.success-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: var(--text);
+}
+
+.success-content p {
+  color: var(--text-muted);
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+}
