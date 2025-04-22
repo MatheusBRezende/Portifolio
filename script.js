@@ -179,30 +179,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
 window.addEventListener("scroll", animateOnScroll)
 
-document.getElementById('contactForm').addEventListener('submit', async function (event) {
-  event.preventDefault();
-
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const message = document.getElementById('message').value;
-
-  try {
-      const response = await fetch('https://formsubmit.co/ajax/mbazarello@gmail.com', {
-          method: 'POST',
-          headers: {
-              'Content-Type': 'application/json',
-              Accept: 'application/json',
-          },
-          body: JSON.stringify({ name, email, message }),
+document.getElementById('contactForm').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  
+  const formData = new FormData(this);
+  const response = await fetch('https://formsubmit.co/ajax/mbazarello@gmail.com', {
+      method: 'POST',
+      body: formData
+  });
+  
+  if (response.ok) {
+      // Mostra popup personalizado
+      Swal.fire({
+          icon: 'success',
+          title: 'Mensagem enviada!',
+          text: 'Obrigado pelo seu contato!'
       });
-
-      if (response.ok) {
-          alert('Mensagem enviada com sucesso!');
-          document.getElementById('contactForm').reset();
-      } else {
-          alert('Ocorreu um erro ao enviar a mensagem. Tente novamente.');
-      }
-  } catch (error) {
-      alert('Erro ao enviar a mensagem. Verifique sua conexão com a internet.');
+      
+      // Limpa o formulário
+      this.reset();
+  } else {
+      alert('Erro ao enviar mensagem');
   }
 });

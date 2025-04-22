@@ -353,7 +353,12 @@ public class ExperienciaIncrivel {
                     </div>
                 </div>
                 
-                <form class="contact-form" id="contactForm" onsubmit="sendEmail(event)" data-formsubmit="true">
+                <form class="contact-form" action="https://formsubmit.co/mbazarello@gmail.com" method="POST" data-formsubmit="true">
+                    
+                    <input type="hidden" name="_next" value="https://seusite.com">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="box">
+                    
                     <div class="form-group">
                         <label for="name">Nome</label>
                         <input type="text" id="name" name="name" placeholder="Seu nome" required>
@@ -369,10 +374,6 @@ public class ExperienciaIncrivel {
                     <button type="submit" class="btn btn-primary btn-block">
                         <i class="bi bi-send"></i> Enviar Mensagem
                     </button>
-
-                    <script>
-
-                    </script>
                 </form>
             </div>
         </div>
