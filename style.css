@@ -1086,9 +1086,6 @@ html.dark .moon-icon {
     text-align: center;
   }
 
-  .project-card.featured {
-    grid-template-columns: 1fr;
-  }
 
   .contact-grid {
     grid-template-columns: 1fr;
@@ -1131,14 +1128,14 @@ html.dark .moon-icon {
   }
 }
 
-/* Adicionando apenas a correção para o projeto featured */
+
 @media (max-width: 768px) {
   .project-card.featured {
     grid-template-columns: 1fr;
   }
 }
 
-/* Garantindo que os links do projeto sejam sempre visíveis */
+
 .project-links {
   display: flex;
   gap: 10px;
@@ -1147,13 +1144,6 @@ html.dark .moon-icon {
   position: relative;
 }
 
-/* Ajuste para o card featured quando filtrado */
-.project-card.featured {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-/* Garantindo que o conteúdo do projeto seja visível */
 .project-content {
   padding: 25px;
   z-index: 2;

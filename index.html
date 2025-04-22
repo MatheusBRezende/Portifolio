@@ -233,7 +233,7 @@ public class ExperienciaIncrivel {
             </div>
             
             <div class="projects-grid">
-                <div class="project-card featured" data-category="web">
+                <div class="project-card" data-category="web">
                     <div class="project-image">
                         <img src="./photos/image.png" alt="Sistema de Confirmação de Presença" loading="lazy">
                         <div class="project-tag">Concluído</div>
@@ -267,7 +267,7 @@ public class ExperienciaIncrivel {
                             <span>Minecraft Forge</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/MatheusBRezende/BrasilRL" class="btn btn-small btn-primary" target="_blank" rel="noopener">
+                            <a href="https://github.com/MatheusBRezende/confirmacao-presenca" class="btn btn-small btn-primary" target="_blank" rel="noopener">
                                 <i class="bi bi-eye"></i> Visualizar
                             </a>
                         </div>
@@ -288,7 +288,7 @@ public class ExperienciaIncrivel {
                             <span>IA</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/MatheusBRezende/Breakin-Cat" class="btn btn-small btn-primary" target="_blank" rel="noopener">
+                            <a href="https://github.com/MatheusBRezende/confirmacao-presenca" class="btn btn-small btn-primary" target="_blank" rel="noopener">
                                 <i class="bi bi-eye"></i> Visualizar
                             </a>
                         </div>
@@ -353,7 +353,7 @@ public class ExperienciaIncrivel {
                     </div>
                 </div>
                 
-                <form class="contact-form" id="contactForm">
+                <form class="contact-form" id="contactForm" onsubmit="sendEmail(event)">
                     <div class="form-group">
                         <label for="name">Nome</label>
                         <input type="text" id="name" name="name" placeholder="Seu nome" required>
@@ -369,6 +369,36 @@ public class ExperienciaIncrivel {
                     <button type="submit" class="btn btn-primary btn-block">
                         <i class="bi bi-send"></i> Enviar Mensagem
                     </button>
+
+                    <script>
+                        document.getElementById('contactForm').addEventListener('submit', async function (event) {
+                            event.preventDefault();
+                          
+                            const name = document.getElementById('name').value;
+                            const email = document.getElementById('email').value;
+                            const message = document.getElementById('message').value;
+                          
+                            try {
+                                const response = await fetch('https://formsubmit.co/ajax/mbazarello@gmail.com', {
+                                    method: 'POST',
+                                    headers: {
+                                        'Content-Type': 'application/json',
+                                        Accept: 'application/json',
+                                    },
+                                    body: JSON.stringify({ name, email, message }),
+                                });
+                          
+                                if (response.ok) {
+                                    alert('Mensagem enviada com sucesso!');
+                                    document.getElementById('contactForm').reset();
+                                } else {
+                                    alert('Ocorreu um erro ao enviar a mensagem. Tente novamente.');
+                                }
+                            } catch (error) {
+                                alert('Erro ao enviar a mensagem. Verifique sua conexão com a internet.');
+                            }
+                          });
+                    </script>
                 </form>
             </div>
         </div>
