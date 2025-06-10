@@ -1,0 +1,199 @@
+/* Mobile Menu */
+.mobile-menu {
+    display: block;
+    z-index: 1001;
+}
+
+.mobile-menu.active i::before {
+    content: '\f00d';
+}
+
+nav ul {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--white);
+    flex-direction: column;
+    padding: 80px 20px 20px;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+nav ul.show {
+    display: flex;
+}
+
+nav ul li {
+    margin: 0;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--gray-light);
+}
+
+nav ul li a {
+    font-size: 1.2rem;
+    display: block;
+    padding: 10px 0;
+}
+
+/* Hero Section */
+.hero {
+    padding: 100px 0 60px;
+    text-align: center;
+}
+
+.hero .container {
+    flex-direction: column;
+}
+
+.hero-content {
+    order: 2;
+    margin-bottom: 0;
+}
+
+.hero-image {
+    order: 1;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+.image-wrapper {
+    width: 280px;
+    height: 280px;
+}
+
+.hero h1 {
+    font-size: 2.2rem;
+}
+
+.hero .subtitle {
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-buttons {
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* About Section */
+.about-content {
+    flex-direction: column;
+}
+
+.about-image {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.about-text {
+    text-align: center;
+}
+
+/* Projects Grid */
+.projects-grid {
+    grid-template-columns: 1fr;
+}
+
+/* Contact Section */
+.contact-content {
+    flex-direction: column;
+}
+
+.contact-form {
+    order: 2;
+    margin-top: 40px;
+}
+
+.contact-info {
+    order: 1;
+    text-align: center;
+}
+
+.info-item {
+    justify-content: center;
+}
+
+.social-links {
+    justify-content: center;
+}
+
+/* General Adjustments */
+.container {
+    width: 95%;
+    padding: 0 15px;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.btn, .btn-small {
+    padding: 12px 25px;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+/* Notification Styles */
+/* Notification Popup Styles */
+.notification-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition);
+}
+
+.notification-popup.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-content {
+  background-color: var(--white);
+  padding: 40px;
+  border-radius: var(--border-radius-lg);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: var(--shadow-xl);
+  transform: translateY(20px);
+  transition: var(--transition);
+}
+
+.notification-popup.active .popup-content {
+  transform: translateY(0);
+}
+
+.popup-content i {
+  font-size: 4rem;
+  color: var(--success-color);
+  margin-bottom: 20px;
+}
+
+.popup-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: var(--dark-color);
+}
+
+.popup-content p {
+  margin-bottom: 25px;
+  color: var(--text-color);
+}
+
+#closePopup {
+  margin-top: 20px;
+}
