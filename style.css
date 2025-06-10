@@ -701,6 +701,17 @@ nav ul li a:hover::after {
   margin-top: 20px;
 }
 
+.download-cv {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.download-cv .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
 /* Footer */
 footer {
     background-color: var(--dark-color);

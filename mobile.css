@@ -197,3 +197,8 @@ section {
 #closePopup {
   margin-top: 20px;
 }
+
+.download-cv .btn {
+  width: auto;
+  max-width: 100%;
+}
